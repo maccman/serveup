@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var express  = require('express');
 var argv     = require('optimist').argv;
 var resolve  = require('path').resolve;
