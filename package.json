@@ -14,7 +14,7 @@
   }, 
   "engine" : [ "node >=0.1.102" ], 
   "main" : "./index.js",
-  "bin": { "serving": "./index.js" },
+  "bin": { "serveup": "./index.js" },
   "dependencies" : { 
     "express": "~2.4.3",
     "optimist": "~0.2.6"
