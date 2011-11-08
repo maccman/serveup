@@ -1,7 +1,7 @@
 { 
   "name": "serveup", 
   "description": "Simple static server.", 
-  "version": "0.0.2", 
+  "version": "0.0.3", 
   "author": "maccman", 
   "licenses":
     [{ 
@@ -16,7 +16,7 @@
   "main" : "./index.js",
   "bin": { "serveup": "./index.js" },
   "dependencies" : { 
-    "express": "~2.4.3",
+    "express": "~2.5.0",
     "optimist": "~0.2.6"
   }
 }
