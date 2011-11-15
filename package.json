@@ -16,7 +16,7 @@
   "main" : "./index.js",
   "bin": { "serveup": "./index.js" },
   "dependencies" : { 
-    "express": "~2.5.0",
+    "strata": "0.7.0",
     "optimist": "~0.2.6"
   }
 }
