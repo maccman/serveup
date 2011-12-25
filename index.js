@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-var strata   = require('strata');
+var express  = require('express');
 var argv     = require('optimist').argv;
 var resolve  = require('path').resolve;
 
 var path = resolve(argv._[0] || process.cwd());
 var port = argv.p || argv.port || process.env.PORT || 9294;
 
-app = new strata.Builder;
-app.use(strata.contentLength);
-app.use(strata.static, path);
+server = express.createServer();
+server.use(express.static(path));
+server.listen(port);
 
-strata.run(app, {port: port});
+console.log('Started server on: ' + port);
